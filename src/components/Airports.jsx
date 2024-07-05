@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaEdit, FaTrash } from 'react-icons/fa';
-import AirportPage from './AirportPage';
+
 
 function Airports() {
   const [airports, setAirports] = useState([

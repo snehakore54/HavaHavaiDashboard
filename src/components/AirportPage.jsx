@@ -30,6 +30,8 @@ function AirportPage() {
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
+
+        // eslint-disable-next-line no-unused-vars
         const updatedItem = { id, image: reader.result };
         if (isTerminal) {
           setTerminals(terminals.map(t => t.id === id ? { ...t, image: reader.result } : t));
